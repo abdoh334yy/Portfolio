@@ -1,0 +1,144 @@
+:root {
+    --background:  #232946;
+    --text: #fffffe ;
+    --border: #001e1d ;
+    --back2: #abd1c6;
+  }
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Protest Strike', sans-serif;
+    text-align: center;
+    background-color: var(--background)
+  }
+  h1 {
+    font-size: 60px;
+  }
+  #navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--background);
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 3px solid var(--border)
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    font-family:'Protest Riot', sans-serif; 
+  
+  }
+  .nav-links a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: var(--text);
+  }
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  section {
+    padding: 70px 0 ;
+    min-height: 100vh;
+  }
+  #welcome-section {
+    background-color: var(--background);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  #welcome-section h1 {
+    margin-top: 30vh;
+  }
+  #welcome-section p {
+    color: #eebbc3 ;
+    font-size: 25px;
+    margin: 25px 0;
+  }
+  #projects {
+    background-color: #121629;
+  }
+  #projects h1 {
+    color: #fff;
+    padding-bottom: 10px;
+    margin-top: -50px;
+  }
+  #projects .project-tile {
+    height: 525px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px 5px black;
+    text-decoration: none;
+  }
+  #projects .project-tile img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  }
+  #projects .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  #projects .project-tile p {
+    font-size: 25px;
+    padding: 10px;
+  }
+  #projects .project-tile span {
+    opacity: 0%;
+    padding: 0 5px;
+  }
+  #projects .project-tile:hover span {
+    opacity: 100%;
+    color: #eebbc3;
+    transition: opacity 0.25s ease-in ;
+  }
+  #contact {
+    color: #fff
+  }
+  #contact h1 {
+    margin-top: 300px;
+  }
+  #contact .social {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s ease-in ;
+    align-items: center;
+    font-size: 22px;
+  }
+  #contact .social:hover {
+    transform: translateY(10px);
+  }
+  footer {
+    color: #fff;
+    font-size: 25px;
+    padding: 30px;
+  }
+  @media only screen and (width < 700px) {
+    h1 {
+      font-size: 50px;
+    }
+    #projects .project-tile {
+      height: 600px;
+      width: 100%;
+    }
+  }
